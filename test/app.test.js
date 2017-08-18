@@ -4,8 +4,8 @@ const mocha = require('mocha');
 const app = require('../src/app').app;
 
 describe('testing app.js', () => {
-  it('should pass', () => {
-    let x = 0;
-    expect(x).equal(0);
+  it('should return 0 when no numbers are sent', () => {
+    let sum = app();
+    expect(sum).equal(0);
   })
 });
